@@ -1,0 +1,42 @@
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sytem-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #23232e;
+    height: 8vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px; 
+    margin-left: 32px;
+}
+h3 {
+   text-align: center;
+   color: #fff;
+   background-color: rgba(0, 0, 0, 0.37);
+}
+
+img {
+    opacity: 0.8;
+    right: 50%;
+  }

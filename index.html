@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificações</title>
+    <link href="css/index.css" rel="stylesheet">
+    <style>
+        body {
+          background-image: url('img/New-Zealand.jpg');
+          background-color: rgba(0, 0, 0, 0.938);
+          background-size: cover;
+        }
+        </style>
+</head>
+<body>
+    <header>
+      <nav>
+        <a class="logo" href="index.html">Codificações</a>
+        <ul class="nav-list">
+        <li><a href="Base64.html">Base64</a></li>
+        <li><a href="cifradcesar.html">Cifra de César</a></li>
+
+        </ul>
+
+      </nav>
+
+    </header>
+
+    <form class="form">
+        <fieldset class="field">
+            <h2 class="sub-title">Codifique/Decodifique <br>sua mensagem</h2>
+            <section>
+                <div class="typeit">
+                    <label>Digite sua mensagem:</label><br>
+                    <textarea id="txt" rows="10" cols="50" placeholder="Sua mensagem aqui..." class="txt"></textarea><br>
+                </div>
+                <div class="middle">
+                    <div id="selection" class="selection">
+                        <select id="select">
+                            <option value="1">Selecione seu método:</option>
+                            <option value="2">Base64</option>
+                            <option value="3">Cifra de César</option>
+                        </select>
+                        <div id="passos" class="passos">
+                            <label>Quantidade de passos:</label>
+                            <input id="key" type="range" min="0" max="25" oninput="this.nextElementSibling.value = this.value" />
+                            <output>12</output>
+                        </div>
+                    </div>
+                    <div class="radio" id="radio">
+                        <input id="encode" name="code" type="radio">
+                        <label>Codificar</label><br>
+                        <input id="decode" name="code" type="radio">
+                        <label>Decodificar</label><br>
+                    </div>
+                    <div id="btn">
+                    </div>
+                </div>
+                <div class="output" id="output">
+                    <label>Resultado:</label><br>
+                    <textarea class="txt" rows="10" cols="50" readonly id="finalTxt" placeholder="Seu resultado aqui..."></textarea>
+                </div>
+            </section>
+        </fieldset>
+    </form>
+</main>
+<footer>
+
+    <rodapé>
+    <p> Copyright © 2022 - Projeto para Resilia Educação | Realizado por Tamires Porto</p>
+  </rodapé><script src="scripts/cod.js"></script>
+</body>
+</html>
